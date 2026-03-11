@@ -35,7 +35,8 @@ def check_guess(guess, secret):
 
     try:
         if guess > secret:
-            return "Too High", "� Go LOWER!"
+            # FIXME: Logic breaks here - hint messages were reversed (said "Go HIGHER!" when should be "Go LOWER!")
+            return "Too High", "📉 Go LOWER!"
         else:
             return "Too Low", "📈 Go HIGHER!"
     except TypeError:
@@ -136,6 +137,7 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
+    # FIXME: Logic breaks here - status wasn't reset to "playing", blocking new games from starting
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(low, high)
     st.session_state.status = "playing"
