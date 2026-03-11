@@ -26,12 +26,17 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+   To guess number for different levels we have option to use hint-  if we got number in given attempts we will get some score or it will deduct otherwise.
 - [ ] Detail which bugs you found.
+   Initially it was giving hints in opposite way, I cannot able to start new game and I was not able to enter the guess instead I have to use mouse to enter my guess.
 - [ ] Explain what fixes you applied.
+   For the above problems, I made changes in logic_utils and apps python code with use of AI Copilot.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ <img width="1431" height="846" alt="Screenshot 2026-03-10 at 7 38 07 PM" src="https://github.com/user-attachments/assets/92ccb8d5-947e-4850-acff-6f9ef945d0f9" />
+] [Insert a screenshot of your fixed, winning game here]
+      
 
 ## 🚀 Stretch Features
 
